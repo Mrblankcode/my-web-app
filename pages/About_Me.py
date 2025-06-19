@@ -11,7 +11,7 @@ st.write("I am also interested in programming and data science, and I am always 
 
 
 st.write("This is a picture of me:")
-st.image("../WIN_20250619_09_12_35_Pro.jpg",
+st.image("WIN_20250619_09_12_35_Pro.jpg",
          caption="Guled's picture", use_container_width=True)
 
 url = "http://www.pioneerscitech.com/u/nassiba"
