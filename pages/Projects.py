@@ -10,7 +10,7 @@ This project simulates the trajectory of a projectile under gravity.
 It visualizes how the angle and initial velocity affect the path of the projectile.
 """)
 st.markdown(
-    "[View code on GitHub](https://github.com/yourusername/projectile-motion-simulation)")
+    "[View Simulation](https://ophysics.com/k8.html)")
 
 st.header("2. Pendulum Simulation")
 st.write("""
@@ -18,6 +18,6 @@ This project models the motion of a simple pendulum using physics equations.
 It helps visualize the periodic motion and energy changes in a pendulum.
 """)
 st.markdown(
-    "[View code on GitHub](https://github.com/yourusername/pendulum-simulation)")
+    "[View Simulation](https://ophysics.com/f3a.html)")
 
 # Add more projects as needed
