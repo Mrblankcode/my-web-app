@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#FF4B4B"         # Vibrant red
+backgroundColor = "#FFF700"      # Bright yellow
+secondaryBackgroundColor = "#00FFD0"  # Vibrant teal
+textColor = "#222222"            # Dark text for contrast
+font = "sans serif"
