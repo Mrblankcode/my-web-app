@@ -77,5 +77,3 @@ st.image(member["image"], caption=member["name"], use_container_width=True)
 st.subheader(member["name"])
 st.write(f"**Role:** {member['role']}")
 st.write(member["desc"])
-
-git pull origin main
