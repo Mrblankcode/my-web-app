@@ -28,6 +28,8 @@ st.markdown(
 
 # --------CREATOR SECTION--------
 st.title("Creators")
+st.markdown("**This page is dedicated to my family**")
+
 # List of creators
 creators = [
     {
@@ -38,7 +40,7 @@ creators = [
     },
     {
         "name": "Ali Nassib",
-        "role": "computer scientist",
+        "role": "PHD holder in electrical and computer engineering",
         "image": "pages/ali.png",
         "desc": "Ali specializes in radars and works for the FCC."
     },
@@ -53,3 +55,60 @@ st.image(creator["image"], caption=creator["name"], use_container_width=True)
 st.subheader(creator["name"])
 st.write(f"**Role:** {creator['role']}")
 st.write(creator["desc"])
+
+# Git commands section
+st.title("Update Projects Page")
+st.write("To update the Projects page with the latest content, run the following commands in your terminal:")
+st.code(r"""
+cd "c:\Users\Guled\Hello World"
+git add pages/Projects.py
+git commit -m "Update Projects page with latest content"
+git push origin main
+""")
+
+# --------FAMILY SLIDER SECTION--------
+st.title("Family")
+st.markdown("**This page is dedicated to my family**")
+
+# List of family members
+family = [
+    {
+        "name": "Guled Nassib",
+        "role": "Theoretical Physicist",
+        "image": "pages/guled.jpg",
+        "desc": "Guled is passionate about physics and mathematics."
+    },
+    {
+        "name": "Koshin Nassib",
+        "role": "Student",
+        "image": "pages/koshin.jpg",
+        "desc": "Koshin enjoys robotics and technology."
+    },
+    {
+        "name": "Muna Nassib",
+        "role": "Student",
+        "image": "pages/muna.jpg",
+        "desc": "Muna loves art and science."
+    },
+    {
+        "name": "Dini Nassib",
+        "role": "Student",
+        "image": "pages/dini.jpg",
+        "desc": "Dini is curious about the world and enjoys reading."
+    },
+    {
+        "name": "Dr. Ali Nassib",
+        "role": "PhD in Electrical and Computer Engineering",
+        "image": "pages/ali.png",
+        "desc": "Dr. Ali specializes in radars and works for the FCC."
+    },
+]
+
+# Slider to select family member
+index = st.slider("Slide to see my family members", 0, len(family)-1, 0)
+
+member = family[index]
+st.image(member["image"], caption=member["name"], use_container_width=True)
+st.subheader(member["name"])
+st.write(f"**Role:** {member['role']}")
+st.write(member["desc"])
