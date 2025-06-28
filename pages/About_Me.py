@@ -25,46 +25,11 @@ url2 = "https://www.youtube.com/@gulednassib7360"
 st.markdown(
     f"Check out this [link]({url2}) to my YouTube channel!")
 
-
-# --------CREATOR SECTION--------
-st.title("Creators")
-st.markdown("**This page is dedicated to my family**")
-
-# List of creators
-creators = [
-    {
-        "name": "Guled Nassib",
-        "role": "Theoretical Physicist",
-        "image": "pages/guled.jpg",
-        "desc": "Guled is passionate about physics and mathematics."
-    },
-    {
-        "name": "Ali Nassib",
-        "role": "PHD holder in electrical and computer engineering",
-        "image": "pages/ali.png",
-        "desc": "Ali specializes in radars and works for the FCC."
-    },
-    # Add more creators as needed
-]
-
-# Slider to select creator
-index = st.slider("Slide to see the creators", 0, len(creators)-1, 0)
-
-creator = creators[index]
-st.image(creator["image"], caption=creator["name"], use_container_width=True)
-st.subheader(creator["name"])
-st.write(f"**Role:** {creator['role']}")
-st.write(creator["desc"])
-
-# Git commands section
-st.title("Update Projects Page")
-st.write("To update the Projects page with the latest content, run the following commands in your terminal:")
-st.code(r"""
-cd "c:\Users\Guled\Hello World"
-git add pages/Projects.py
-git commit -m "Update Projects page with latest content"
-git push origin main
-""")
+# --------DEDICATION SECTION--------
+st.title("Dedication")
+st.markdown("**This page is dedicated to Dr.Ali Nassib my father**")
+st.write("Dr. Ali Nassib is a PhD holder in Electrical and Computer Engineering, specializing in radars and working for the FCC.")
+st.image("pages/ali.png", caption="Dr. Ali Nassib", use_container_width=True)   
 
 # --------FAMILY SLIDER SECTION--------
 st.title("Family")
@@ -82,19 +47,19 @@ family = [
         "name": "Koshin Nassib",
         "role": "Student",
         "image": "pages/koshin.jpg",
-        "desc": "Koshin enjoys robotics and technology."
+        "desc": "Koshin wants to grow up to be a Theoretical Physist."
     },
     {
         "name": "Muna Nassib",
         "role": "Student",
         "image": "pages/muna.jpg",
-        "desc": "Muna loves art and science."
+        "desc": "Muna is passionate to be a Doctor."
     },
     {
         "name": "Dini Nassib",
         "role": "Student",
         "image": "pages/dini.jpg",
-        "desc": "Dini is curious about the world and enjoys reading."
+        "desc": "Dini is curious about the world and wants to grow up to be an astrophysist."
     },
     {
         "name": "Dr. Ali Nassib",
@@ -112,3 +77,5 @@ st.image(member["image"], caption=member["name"], use_container_width=True)
 st.subheader(member["name"])
 st.write(f"**Role:** {member['role']}")
 st.write(member["desc"])
+
+git pull origin main
